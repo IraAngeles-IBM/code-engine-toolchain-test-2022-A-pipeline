@@ -55,7 +55,7 @@ spec:
       value: $(params.memory)
       default: "0.5G"
     - name: min-scale
-      description: minimum scale of the Code Engine application
+      value: $(params.min-scale)
       default: "0"        
     - name: max-scale
       value: $(params.max-scale)
