@@ -145,7 +145,7 @@ spec:
             --rs ${IMAGE_PULL_SECRET_NAME} \
             -w=false \
             --cpu $(params.cpu) \
-            --min $(params.min-scale) \            
+            --min $(params.min-scale) \
             --max $(params.max-scale) \
             -m $(params.memory) \
             -p $(params.port)
