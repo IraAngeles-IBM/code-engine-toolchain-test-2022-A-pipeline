@@ -58,7 +58,8 @@ spec:
       description: minimum scale of the Code Engine application
       default: "0"        
     - name: max-scale
-      value: $(params.max-scale)        
+      value: $(params.max-scale)
+      default: "1"
     - name: port
       description: port where the application is listening
       default: "http1:8080"
