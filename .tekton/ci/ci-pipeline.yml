@@ -307,6 +307,12 @@ spec:
           value: $(params.code-engine-project)
         - name: service-bindings
           value: $(params.service-bindings)
+        - name: cpu
+          value: $(params.cpu)
+        - name: memory
+          value: $(params.memory)
+        - name: max-scale
+          value: $(params.max-scale)  
         - name: port
           value: $(params.port)
         - name: image-repository
