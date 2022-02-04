@@ -48,6 +48,12 @@ spec:
     - name: service-bindings
       description: service binding JSON for the application deployment
       default: "{}"
+    - name: cpu
+      value: $(params.cpu)
+    - name: memory
+      value: $(params.memory)
+    - name: max-scale
+      value: $(params.max-scale)        
     - name: port
       description: port where the application is listening
       default: "http1:8080"
