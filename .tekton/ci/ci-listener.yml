@@ -50,14 +50,14 @@ spec:
       description: service binding JSON for the application deployment
       default: "{}"
     - name: cpu
-      value: $(params.cpu)
+      default: "0.25"
     - name: memory
-      value: $(params.memory)
+      default: "0.5G"
     - name: min-scale
+      default: "0"
       description: minimum scale of the Code Engine application
-      value: $(params.min-scale)  
-    - name: max-scale
-      value: $(params.max-scale)        
+    - name: max-scale 
+      default: "1"
     - name: port
       description: port where the application is listening
       default: "http1:8080"
