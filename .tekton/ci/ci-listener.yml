@@ -54,8 +54,7 @@ spec:
     - name: memory
       value: $(params.memory)
     - name: min-scale
-      description: minimum scale of the Code Engine application
-      default: "0"      
+      description: minimum scale of the Code Engine application  
     - name: max-scale
       value: $(params.max-scale)        
     - name: port
