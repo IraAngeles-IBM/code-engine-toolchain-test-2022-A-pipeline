@@ -27,6 +27,9 @@ spec:
     - name: cpu
       description: number of vCPU of the Code Engine application
       default: "0.25"
+    - name: min-scale
+      description: minimum scale of the Code Engine application
+      default: "0"      
     - name: max-scale
       description: maximum scale of the Code Engine application
       default: "1"
@@ -142,6 +145,7 @@ spec:
             --rs ${IMAGE_PULL_SECRET_NAME} \
             -w=false \
             --cpu $(params.cpu) \
+            --min $(params.min-scale) \            
             --max $(params.max-scale) \
             -m $(params.memory) \
             -p $(params.port)
@@ -152,6 +156,7 @@ spec:
             --rs ${IMAGE_PULL_SECRET_NAME} \
             -w=false \
             --cpu $(params.cpu) \
+            --min $(params.min-scale) \
             --max $(params.max-scale) \
             -m $(params.memory) \
             -p $(params.port)
